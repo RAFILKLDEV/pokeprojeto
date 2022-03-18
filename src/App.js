@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import PokemonCard from './components/PokemonCards/PokemonCard';
+import Testezim from './components/teste';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+
+  const promotion = {
+    "id": 1,
+    "name": "Raichu",
+    "type": "Eletric",
+    "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"
+  }
+
+  return(
+    <div 
+    className="App"
+    style={{
+      maxWidth: 800,
+      maxHeight: 800,
+      margin: '30px auto',
+    }}
+    >
+      <PokemonCard promotion={promotion}></PokemonCard>
     </div>
-  );
+
+    
+  )
 }
 
 export default App;

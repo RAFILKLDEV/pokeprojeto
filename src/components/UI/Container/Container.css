@@ -1,0 +1,8 @@
+.ui-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 60px;
+    background-image: url(https://wallpaperaccess.com/full/197610.jpg) ;
+    align-items: center;
+    text-align: center;
+}   

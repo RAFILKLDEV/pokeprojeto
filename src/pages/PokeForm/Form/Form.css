@@ -1,0 +1,20 @@
+.pokemon-form__index {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.pokemon-form__index label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+
+.pokemon-form__index input {
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    background-color: aliceblue;
+    height: 36px;
+    padding: 0 10px;
+}
