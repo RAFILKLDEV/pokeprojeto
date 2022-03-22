@@ -1,8 +1,10 @@
 .ui-container {
-    max-width: 100vw;
-    max-height: 100vh;
-    padding: 60px;
-    background-image: url(https://wallpaperaccess.com/full/197610.jpg) ;
+    background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
     align-items: center;
-    text-align: center;
-}   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
