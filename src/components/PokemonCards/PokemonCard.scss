@@ -1,13 +1,14 @@
 .pokemon-card {
     width: 500px;
-    background-color: #eee;
+    background-color: rgb(223, 0, 0);
 	border-radius: 20px;
-	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    border: 10px inset #000000;
 	padding: 20px;
 	text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-transform: uppercase;
 
     > img {
         margin-top: 40px;
@@ -23,6 +24,7 @@
         width: 300px;
         font-size: 45px;
         border: none;
+        background-color: #00000000;
         background-image: url(https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -31,8 +33,7 @@
     }
 
     .title {
-        padding: 10px;
-        font-size: 30px;
+        font-size: 50px;
         font-weight: 700;
 
     }
