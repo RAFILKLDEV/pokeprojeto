@@ -1,0 +1,19 @@
+.Header {
+    margin-bottom: 50px;
+    justify-items: center;
+    justify-content: center;
+
+> button {
+    margin: 30px 30px 0px 0px;
+    width: 150px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background: linear-gradient(0deg, #ebebeb 50%, #df3030 50%);
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: monospace;
+    text-align: center;
+}
+
+}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import Header from "../../../components/Header/Header";
+import UiContainer from "../../../components/UI/Container/Container";
 import "./Form.css"
 
 const initialValue = {
@@ -26,7 +28,10 @@ const Pages_PokeForm_Form = () => {
     }
 
     return(
-        <div>
+        
+        <UiContainer >
+            <Header></Header>
+            <div className="menu">
             FORM
             { id && <div>id: {id}</div> }
             <form onSubmit={onSubmit}>
@@ -54,7 +59,9 @@ const Pages_PokeForm_Form = () => {
                     <button className="pokemon-form__index" type="submit">Salvar</button>
                 </div>
             </form>
-        </div>
+            </div>
+        </UiContainer>
+        
     )
 }
 

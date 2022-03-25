@@ -34,7 +34,7 @@ const PokemonCard = ({ pokecards }) => {
     
 //   }, [])
     const bars = [{
-        label: 'HP&nbsp;',
+        label: 'HP ',
         key: 'hp',
         index: 0
     }, {
