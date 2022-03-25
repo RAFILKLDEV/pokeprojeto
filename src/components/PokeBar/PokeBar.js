@@ -1,12 +1,19 @@
 import React from "react";
 import './PokeBar.scss'
 
-const PokeBar = ({props}) => {
-
+const PokeBar = ({ props, stat }) => {
+    const statData = props?.stats?.find(it => it?.stat?.name === stat.key)?.base_stat
+    const bars = Math.ceil(statData / 17)
     return(
         <div className="PokeBar">
-            <div className="Stats">{props.stats?.[0].stat.name}</div>
-            <div className="Stats">{props.stats?.[0].base_stat}</div>
+            <div className="Stats" dangerouslySetInnerHTML={{
+                __html: stat.label
+            }} />
+            <div className="Stats">{statData}</div>
+            { Array.from({ length: bars }).map((it, index) => {
+                return <div key={`${it}-${index}`} className="Bar"> </div>
+            })}
+        
         </div>
     )
 }

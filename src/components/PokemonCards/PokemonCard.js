@@ -33,18 +33,42 @@ const PokemonCard = ({ pokecards }) => {
 //     let result = (end + randomPoke)
     
 //   }, [])
+    const bars = [{
+        label: 'HP&nbsp;',
+        key: 'hp',
+        index: 0
+    }, {
+        label: 'ATK',
+        key: 'attack',
+        index: 1
+    }, {
+        label: 'DEF',
+        key: 'defense',
+        index: 2
+    }, {
+        label: 'SPA',
+        key: 'special-attack',
+        index: 3
+    }, {
+        label: 'SPD',
+        key: 'special-defense',
+        index: 4
+    }, {
+        label: 'SPE',
+        key: 'speed',
+        index: 5
+    }]
 
     return(
     <div className="pokemon-card">
         <div className="id">#{pokecards.id}</div>
         <div className="title">{pokecards.name}</div>
         <img alt={pokecards.name} src={pokecards.sprites?.front_default} ></img>
-        <div className="types">
-            { pokecards.types?.map( (valor, it) => <div key={pokecards.name + it}>{ valor?.type.name }</div>) }
-
-        </div>
+        <div className="types">{ pokecards?.types?.map(it => it?.type?.name).join(", ") }</div>
         <div>
-            <PokeBar props={pokecards} > </PokeBar>
+            { bars.map(stat => {
+                return <PokeBar key={stat.key} props={pokecards} stat={stat} />
+            }) }
         </div>
         <button>Capturar!</button>
     </div>

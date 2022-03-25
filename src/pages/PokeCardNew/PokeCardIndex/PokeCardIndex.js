@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from 'react-router-dom'
 import PokemonCard from '../../../components/PokemonCards/PokemonCard'
 import Axios from "axios";
 import UiContainer from "../../../components/UI/Container/Container";
@@ -11,13 +12,15 @@ function getRandomInt(min, max) {
 
 const Pages_PokeCardNew_PokeCardIndex = () => {
   const [pokecards, setPokecards] = useState([])
+  const location = useLocation();
  
 
   useEffect( () => {
-    console.log("renderizou")
     const end = 'https://pokeapi.co/api/v2/pokemon/'
     const randomPoke = getRandomInt(1,898)
-    let result = (end + randomPoke)
+    const routeParams = new URLSearchParams(location.search);
+    
+    let result = end + (routeParams.get('id') || randomPoke)
     
     Axios.get(result)
       .then((response) => {
