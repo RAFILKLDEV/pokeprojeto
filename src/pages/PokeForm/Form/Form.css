@@ -1,3 +1,17 @@
+.form-page{
+    background: #EFEFBB;
+	background: -webkit-linear-gradient(to right, #D4D3DD, #EFEFBB);
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+    
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+
+    height: 100vh;
+
+    align-items: center;
+}
+
 .pokemon-form__index {
     display: flex;
     flex-direction: column;

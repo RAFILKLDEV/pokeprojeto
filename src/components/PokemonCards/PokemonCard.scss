@@ -1,48 +1,32 @@
 .pokemon-card {
-    width: 500px;
-    background-color: rgb(187, 190, 176);
+    width: 400px;
 	border-radius: 20px;
     border: 10px inset #000000;
-	padding: 20px;
 	text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-transform: uppercase;
+    flex-wrap: nowrap;
 
     > img {
-        margin-top: 40px;
-        height: 300px;
+        margin-top: 20px;
+        height: 250px;
         width: 300px;
         background-color: rgba(255, 255, 255, 0.198);
 	    border-radius: 40%;
 	    text-align: center;
     }
-    
-    > button {
-        height: 100px;
-        width: 300px;
-        font-size: 45px;
-        border: none;
-        background-color: #00000000;
-        background-image: url(https://s2.coinmarketcap.com/static/img/coins/200x200/8303.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100px;
-        margin-top: 15px;
-    }
 
     .title {
         font-size: 50px;
         font-weight: 700;
-
     }
 
     .types {
         padding: 10px;
         font-size: 15px;
         font-weight: 700;
-
     }
     
     .id {

@@ -1,0 +1,25 @@
+.Pokedex {
+	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
+
+    height: 100%;
+    width: fit-content;
+    
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: center;
+
+.Pokedex__Container {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-grow: 3;
+
+    justify-content: center;
+}
+
+}

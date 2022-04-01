@@ -29,10 +29,10 @@ const Pages_PokeForm_Form = () => {
 
     return(
         
-        <UiContainer >
+        <div className="form-page">
             <Header></Header>
             <div className="menu">
-            FORM
+            FORMULARIO DE CADRASTRO
             { id && <div>id: {id}</div> }
             <form onSubmit={onSubmit}>
                 <div className="pokemon-form__index">
@@ -60,7 +60,7 @@ const Pages_PokeForm_Form = () => {
                 </div>
             </form>
             </div>
-        </UiContainer>
+        </div>
         
     )
 }
