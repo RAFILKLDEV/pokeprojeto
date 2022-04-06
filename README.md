@@ -16,11 +16,11 @@ The Project has two functions:
 
 In the project directory
 
-### Build Project
+## Build Project
 
 https://relaxed-kataifi-859f66.netlify.app/
 
-### Next Updates
+## Next Updates
 
 * User registration implementation
 * Responsive layout

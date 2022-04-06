@@ -49,11 +49,11 @@ const Pages_PokeForm_Form = () => {
                 </div>
                 <div className="pokemon-form__index">
                     <label htmlFor="email">E-mail</label>
-                    <input id="email" name="email" type="text" onChange={onChange}></input>
+                    <input id="email" name="email" type="email" onChange={onChange}></input>
                 </div>
                 <div className="pokemon-form__index">
                     <label htmlFor="password">Senha</label>
-                    <input id="password" name="password" type="email" onChange={onChange}></input>
+                    <input id="password" name="password" type="password" onChange={onChange}></input>
                 </div>
                 <div>
                     <button className="pokemon-form__index" type="submit">Salvar</button>

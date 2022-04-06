@@ -1,4 +1,4 @@
-import './PokemonCard.scss'
+import './PokemonCard2.scss'
 import React from "react";
 import PokeBar from "../PokeBar/PokeBar";
 import { colors, bars } from "../../constants.js"
