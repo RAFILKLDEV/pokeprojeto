@@ -1,0 +1,123 @@
+
+
+.page {
+    --yelow:rgb(255, 255, 42);
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(15, 15, 15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.portContainer {
+    height: 90%;
+    width: 95%;
+    background-color: rgb(18, 18, 18);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.headerPage {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(18, 18, 18);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 0px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.portfolio {
+    height: 100%;
+    width: 30%;
+    font-size: 350%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.header {
+    height: 20%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(18, 18, 18);
+
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content div {
+    font-size: 200%;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.content div:first-of-type {
+    color: var(--yelow);
+}
+
+.portfolio button {
+    height: 8%;
+    width: 40%;
+    background-color: var(--yelow);
+
+    border: none;
+    border-radius: 10%;
+    margin-top: 10%;
+
+    font-size: 40%;
+    font-weight: 600;
+}
+
+.icons {
+    display: flex;
+    text-decoration: none;
+}
+
+.icons * {
+    text-decoration: none;
+    margin: 10%;
+    color: inherit;
+}
+
+a#linkedin:hover {
+    color: rgb(10, 102, 194);
+}
+
+a#github:hover {
+    color: purple;
+}
+
+a#email:hover {
+    color: var(--yelow);
+}
+
+a#whatsapp:hover {
+    color: green;
+}

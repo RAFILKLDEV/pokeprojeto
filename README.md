@@ -8,7 +8,7 @@ I used Html, Css, React, Axios, PokeApi Requests
 
 The Project has two functions:
 
-* Generate random pokemon
+* Generate random Pokemon
 
 * Generate a Pokedex
 

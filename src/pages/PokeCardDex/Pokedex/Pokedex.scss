@@ -2,6 +2,7 @@
 	background: linear-gradient(to right, #D4D3DD, #EFEFBB);
 
     height: 100%;
+    
     width: fit-content;
     
     display: flex;
@@ -18,9 +19,34 @@
     flex-wrap: wrap;
     flex-shrink: 0;
     flex-grow: 3;
-    
+
 
     justify-content: center;
 }
 
+}
+
+@media (max-width: 425px) {
+    .Pokedex {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .Header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Header button {
+        margin: 10px 5px 10px 5px;
+        width: auto;
+        height: auto;
+        border: 5px solid black;
+        border-radius: 5px;
+        background: linear-gradient(0deg, #ebebeb 50%, #df3030 50%);
+        font-size: 22px;
+        font-weight: 1000;
+        font-family: monospace;
+        text-align: center;
+    }
 }

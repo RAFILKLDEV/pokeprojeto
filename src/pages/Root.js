@@ -7,6 +7,7 @@ import {
 import PokeCardDex_Pokedex from "./PokeCardDex/Pokedex/Pokedex";
 import Pages_PokeCardNew_PokeCardIndex from "./PokeCardNew/PokeCardIndex/PokeCardIndex";
 import Pages_PokeForm_Form from "./PokeForm/Form/Form";
+import Portifolio from "./Portfolio/port";
 
 const Root = () => {
     return(
@@ -15,6 +16,7 @@ const Root = () => {
               <Route exact path="/form" element={<Pages_PokeForm_Form></Pages_PokeForm_Form>}/>
               <Route exact path="/pokedex" element={<PokeCardDex_Pokedex></PokeCardDex_Pokedex>}/>
               <Route exact path="/edit/:id" element={<Pages_PokeForm_Form></Pages_PokeForm_Form>}/>
+              <Route exact path="/port" element={<Portifolio></Portifolio>}/>
               <Route exact path="/" element={<Pages_PokeCardNew_PokeCardIndex></Pages_PokeCardNew_PokeCardIndex>}/>
             </Routes>
         </BrowserRouter>
