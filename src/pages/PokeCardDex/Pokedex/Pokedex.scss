@@ -20,7 +20,6 @@
     flex-shrink: 0;
     flex-grow: 3;
 
-
     justify-content: center;
 }
 
@@ -30,7 +29,7 @@
     .Pokedex {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
     .Header {
         display: flex;

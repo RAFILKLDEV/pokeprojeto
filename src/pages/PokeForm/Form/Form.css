@@ -7,7 +7,8 @@
     flex: 100%;
     flex-direction: column;
 
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 
     align-items: center;
 }
@@ -30,11 +31,10 @@
     border-radius: 8px;
     background-color: aliceblue;
     height: 36px;
-    padding: 0 10px;
 }
 
 .menu {
-    width: 1000px;
+    width: 90%;
     height: 1000px;
-    padding: 50px;
+    margin: 10px;
 }

@@ -33,8 +33,7 @@ const Pages_PokeForm_Form = () => {
             <Header></Header>
             <div className="menu">
             FORMULARIO DE CADRASTRO
-            { id && <div>id: {id}</div> }
-            <form onSubmit={onSubmit}>
+            <form className="form" onSubmit={onSubmit}>
                 <div className="pokemon-form__index">
                     <label htmlFor="nameUser">Nome</label>
                     <input id="nameUser" name="nameUser" type="text" onChange={onChange}></input>
